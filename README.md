@@ -1,7 +1,7 @@
 ## Clone nvim configuration
 
 ```
-git clone -b powershell https://github.com/eastanganelli/nvim-pwd.git powershell
+git clone -b powershell https://github.com/eastanganelli/nvim-pwd.git PowerShell
 ```
 
 ## Contents
