@@ -93,5 +93,3 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
     Import-Module "$ChocolateyProfile"
 }
-
-Set-Alias lvim C:\Users\ezequ\.local\bin\lvim.ps1
