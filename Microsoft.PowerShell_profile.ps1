@@ -1,5 +1,5 @@
 ## Variables
-$DEV = "C:\dev"
+$DEV = $Env:DEV_TOOLS
 
 ## INSTALLS
 function Instaladores() {
