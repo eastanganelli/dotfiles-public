@@ -1,10 +1,13 @@
+## Variables
+$DEV = "C:\dev"
+
 ## INSTALLS
-# function Instaladores() {
-#     Install-Module -Name Terminal-Icons -Repository PSGallery
-#     Install-Module -Name z
-#     Install-Module -Name PSFzf
-#     Install-Module discordrpc -Scope CurrentUser
-# }
+function Instaladores() {
+    Install-Module -Name Terminal-Icons -Repository PSGallery
+    Install-Module -Name z
+    Install-Module -Name PSFzf
+    Install-Module discordrpc -Scope CurrentUser
+}
 
 ## Init
 function Iniciadores() {
@@ -22,29 +25,15 @@ function Iniciadores() {
     ##Get-ChildItem | Format-List
     ##Get-ChildItem | Format-Wide
 
-
     ## Fzf
     Import-Module PSFzf
     Set-PsFzfOption -PSReadLineChordProvider 'Ctrl+f' -PSReadLineChordReverseHistory 'Ctrl+r'
 
-
     ## Set theme
     Set-PoshPrompt -Theme cinnomon
 
-
     ## Load prompt configs
     oh-my-posh --init --shell pwsh --config "~/.cinnomon.omp.json" | Invoke-Expression
-
-
-    ## Alias (Optional)
-    Set-Alias g git
-    Set-Alias ll ls
-    Set-Alias grep findstr
-    Set-Alias tig  "C:\Program Files\Git\usr\bin\tig.exe"
-    Set-Alias less "C:\Program Files\Git\usr\bin\less.exe"
-        ## Nano
-        Set-Alias nano "C:\Program Files\Git\usr\bin\nano.exe"
-
 }
 
 ## Ultilities (Optional)
@@ -74,8 +63,16 @@ $params = @{
 }
 
 ## Expressions
-##Invoke-Expression Instaladores
+# Invoke-Expression Instaladores
 
+## Alias (Optional)
+Set-Alias g git
+Set-Alias ll ls
+Set-Alias grep findstr
+Set-Alias tig "C:\Program Files\Git\usr\bin\tig.exe"
+Set-Alias less "C:\Program Files\Git\usr\bin\less.exe"
+Set-Alias python ($DEV + "\python\python.exe")
+    
 New-Alias -Name clr  -Value Cleaning
 
 Invoke-Expression Iniciadores
@@ -93,3 +90,4 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
     Import-Module "$ChocolateyProfile"
 }
+
