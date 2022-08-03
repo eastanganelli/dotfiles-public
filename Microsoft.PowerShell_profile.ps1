@@ -37,12 +37,13 @@ function Iniciadores() {
 
 
     ## Alias (Optional)
-    Set-Alias vim nvim
     Set-Alias g git
     Set-Alias ll ls
     Set-Alias grep findstr
-    Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
-    Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
+    Set-Alias tig  "C:\Program Files\Git\usr\bin\tig.exe"
+    Set-Alias less "C:\Program Files\Git\usr\bin\less.exe"
+        ## Nano
+        Set-Alias nano "C:\Program Files\Git\usr\bin\nano.exe"
 
 }
 
@@ -76,11 +77,10 @@ $params = @{
 ##Invoke-Expression Instaladores
 
 New-Alias -Name clr  -Value Cleaning
-New-Alias -Name make -Value mingw32-make.exe
 
 Invoke-Expression Iniciadores
 
-Start-DSClient @params
+# Start-DSClient @params
 
 Invoke-Expression Cleaning
 # Import the Chocolatey Profile that contains the necessary code to enable
@@ -93,5 +93,3 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
     Import-Module "$ChocolateyProfile"
 }
-
-Set-Alias lvim C:\Users\ezequ\.local\bin\lvim.ps1
