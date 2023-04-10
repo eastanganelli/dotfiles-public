@@ -1,0 +1,171 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">discordrpc</S>
+      <Version N="Version">0.0.2</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Tell people you're playing PowerShell, send Rich Presence events to Discord!</S>
+      <S N="Author">Chrissy LeMaire</S>
+      <S N="CompanyName">chrissylemaire</S>
+      <S N="Copyright">Copyright (c) 2022, licensed under MIT</S>
+      <DT N="PublishedDate">2022-04-11T08:51:16-03:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2023-04-09T16:17:11.3910847-03:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://opensource.org/licenses/MIT</URI>
+      <URI N="ProjectUri">https://github.com/potatoqualitee/discordrpc</URI>
+      <URI N="IconUri">https://github.com/potatoqualitee/discordrpc/raw/main/logo.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>discord</S>
+          <S>chat</S>
+          <S>discordrpc</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Clear-DSTimestamp</S>
+                <S>Get-DSClient</S>
+                <S>Get-DSCurrentUser</S>
+                <S>Get-DSTemplate</S>
+                <S>Get-DSTimerEvent</S>
+                <S>New-DSAsset</S>
+                <S>New-DSButton</S>
+                <S>New-DSClient</S>
+                <S>New-DSLogger</S>
+                <S>New-DSParty</S>
+                <S>New-DSRichPresence</S>
+                <S>New-DSSecret</S>
+                <S>New-DSTimestamp</S>
+                <S>Start-DSClient</S>
+                <S>Stop-DSClient</S>
+                <S>Update-DSAsset</S>
+                <S>Update-DSButton</S>
+                <S>Update-DSRichPresence</S>
+                <S>Update-DSTimestamp</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Clear-DSTimestamp</S>
+                <S>Get-DSClient</S>
+                <S>Get-DSCurrentUser</S>
+                <S>Get-DSTemplate</S>
+                <S>Get-DSTimerEvent</S>
+                <S>New-DSAsset</S>
+                <S>New-DSButton</S>
+                <S>New-DSClient</S>
+                <S>New-DSLogger</S>
+                <S>New-DSParty</S>
+                <S>New-DSRichPresence</S>
+                <S>New-DSSecret</S>
+                <S>New-DSTimestamp</S>
+                <S>Start-DSClient</S>
+                <S>Stop-DSClient</S>
+                <S>Update-DSAsset</S>
+                <S>Update-DSButton</S>
+                <S>Update-DSRichPresence</S>
+                <S>Update-DSTimestamp</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) 2022, licensed under MIT</S>
+          <S N="description">Tell people you're playing PowerShell, send Rich Presence events to Discord!</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">210</S>
+          <S N="downloadCount">436</S>
+          <S N="packageSize">550182</S>
+          <S N="published">11/4/2022 08:51:16 -03:00</S>
+          <S N="created">11/4/2022 08:51:16 -03:00</S>
+          <S N="lastUpdated">6/4/2023 02:29:13 -03:00</S>
+          <S N="tags">discord chat discordrpc PSModule PSFunction_Clear-DSTimestamp PSCommand_Clear-DSTimestamp PSFunction_Get-DSClient PSCommand_Get-DSClient PSFunction_Get-DSCurrentUser PSCommand_Get-DSCurrentUser PSFunction_Get-DSTemplate PSCommand_Get-DSTemplate PSFunction_Get-DSTimerEvent PSCommand_Get-DSTimerEvent PSFunction_New-DSAsset PSCommand_New-DSAsset PSFunction_New-DSButton PSCommand_New-DSButton PSFunction_New-DSClient PSCommand_New-DSClient PSFunction_New-DSLogger PSCommand_New-DSLogger PSFunction_New-DSParty PSCommand_New-DSParty PSFunction_New-DSRichPresence PSCommand_New-DSRichPresence PSFunction_New-DSSecret PSCommand_New-DSSecret PSFunction_New-DSTimestamp PSCommand_New-DSTimestamp PSFunction_Start-DSClient PSCommand_Start-DSClient PSFunction_Stop-DSClient PSCommand_Stop-DSClient PSFunction_Update-DSAsset PSCommand_Update-DSAsset PSFunction_Update-DSButton PSCommand_Update-DSButton PSFunction_Update-DSRichPresence PSCommand_Update-DSRichPresence PSFunction_Update-DSTimestamp PSCommand_Update-DSTimestamp PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2023-04-06T02:29:13Z</S>
+          <S N="NormalizedVersion">0.0.2</S>
+          <S N="Authors">Chrissy LeMaire</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">discordrpc.nuspec|clientids.json|discordrpc.psd1|discordrpc.psm1|LICENSE|logo.png|other-clientids.json|plex.png|presence.png|twitch.png|bin\net35\DiscordRPC.dll|bin\net35\DiscordRPC.pdb|bin\net35\DiscordRPC.xml|bin\net35\Newtonsoft.Json.dll|public\Clear-DSTimestamp.ps1|public\Get-DSClient.ps1|public\Get-DSCurrentUser.ps1|public\Get-DSTemplate.ps1|public\Get-DSTimerEvent.ps1|public\New-DSAsset.ps1|public\New-DSButton.ps1|public\New-DSClient.ps1|public\New-DSLogger.ps1|public\New-DSParty.ps1|public\New-DSRichPresence.ps1|public\New-DSSecret.ps1|public\New-DSTimestamp.ps1|public\Start-DSClient.ps1|public\Stop-DSClient.ps1|public\Update-DSAsset.ps1|public\Update-DSButton.ps1|public\Update-DSRichPresence.ps1|public\Update-DSTimestamp.ps1</S>
+          <S N="GUID">0472bfcf-006c-4f50-b27d-fe146c3eef8d</S>
+          <S N="PowerShellVersion">5.1</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\ezequ\Documents\PowerShell\Modules\discordrpc\0.0.2</S>
+    </MS>
+  </Obj>
+</Objs>
