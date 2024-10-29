@@ -1,6 +1,7 @@
 ## Variables
    $DEV = $Env:WINAPPS
    $DEPTHAI = $Env:DEPTHAI
+   ## $PYTHON = $Env:PYTHON
 
 ## Imports
    Import-Module PSReadLine
@@ -26,7 +27,7 @@
    }
 
    function oakcam {
-      python  $DEPTHAI"\\depthai_demo.py"  --app=uvc
+      python $DEPTHAI"\depthai_demo.py" --app=uvc
    }
 
    function ctt {
@@ -49,14 +50,14 @@
    }
 
 ## Discord Presence
-   $params = @{
-      Details      = "Version $($PSVersionTable.PSVersion.Major).$($PSVersionTable.PSVersion.Minor)"
-      State        = (Split-Path -Path $pwd -Leaf)
-      Start        = "Now"
-      UpdateScript = {
-         Update-DSRichPresence -State (Split-Path -Path $pwd -Leaf)
-      }
-   }
-   Start-DSClient @params
+   ## $params = @{
+   ## Details      = "Version $($PSVersionTable.PSVersion.Major).$($PSVersionTable.PSVersion.Minor)"
+   ## State        = (Split-Path -Path $pwd -Leaf)
+   ## Start        = "Now"
+   ## UpdateScript = {
+   ##       Update-DSRichPresence -State (Split-Path -Path $pwd -Leaf)
+   ##    }
+   ## }
+   ## Start-DSClient @params
 
 clr
